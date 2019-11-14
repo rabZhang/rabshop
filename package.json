@@ -14,5 +14,9 @@
     "shop"
   ],
   "author": "rabzhang",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.4.1"
+  }
 }
