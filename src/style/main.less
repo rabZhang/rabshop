@@ -294,6 +294,37 @@
 	background:#848282;
 	padding:5px 3px;
 }
+.bg-img{
+	background:url('./../img/bgimg.jpg') no-repeat;   
+	-moz-background-size:100% 100%;  
+	background-size:100% 100%;  
+}
+.form-login{
+	width: 440px;
+	height: 373px;
+	position:absolute;
+	background-color:white;
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	padding:44px;
+	& p{
+		margin:16px 0;
+	}
+	&>button{
+		float: right;
+		border-radius: 0;
+		background-color: #0067b8;
+		color: white;
+		padding: 8px 25px;
+	}
+}
+a:hover{
+	color: none;
+	text-decoration:none;
+}
 @media (max-width: 992px){
 	.show-border-left{
 		border-left: 1px solid #ddd!important;
