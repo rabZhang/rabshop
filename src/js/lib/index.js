@@ -1,4 +1,4 @@
-let baseUrl ="http://localhost:8080/";
+let baseUrl ="http://localhost:8080";
 function priceSwitch(x) {
     //强制保留两位小数
     var f = parseFloat(x);
@@ -47,7 +47,6 @@ define(['jquery'],function($){
 				url: `${baseUrl}/lib/getall.php`,
 				dataType: "json",	
 				success: function(response) {
-				console.log(response);
 				let img=[];
 				response.forEach((value,key)=>{
 					img.push((JSON.parse(value.pic))[0].src);

@@ -7,14 +7,15 @@
 	<title>Microsoft 微软官网 | 微软官方商城 | Surface Office Windows Xbox</title>
 	<link rel="stylesheet" type="text/css" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./../style/main.css">
+	 <script type="text/javascript" src="./../../node_modules/requirejs/require.js" data-main="./../js/main.register.js"></script>
 </head>
 <body class="bg-img">
-	<form class="form-login form-group" style="background-color: #f5f5f5">
+	<form class="form-login form-group" style="background-color: #f5f5f5" method="post">
 		<img src="./../img/microsoft.png">
 		<div class="form-group">
 			<h4 style="font-weight: 600;font-size: 24px;">创建账户</h4>
-          <input type="text" class="form-control" name="email" placeholder="someone@example.com">
-          <input type="password" class="form-control" style="margin-top: 10px" name="password" placeholder="密码">
+          <input type="text" class="form-control" id='name' name="email" placeholder="someone@example.com">
+          <input type="password" id='password' class="form-control" style="margin-top: 10px" name="password" placeholder="密码">
           <p><a href="">改使用电话号码</a></p>
           <p><a href="">获取新的电子邮件地址</a></p>
         </div>

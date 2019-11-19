@@ -1,10 +1,24 @@
 require.config({
 	paths:{
 		jquery:"./../../node_modules/jquery/dist/jquery.min",
-		product:"./lib/product"
+		product:"./lib/product",
+		cookie:"./lib/cookie",
+		header:"./lib/header"
 	},
 	shim:{}
 });
 require(['jquery','product'],function($,product){
 	product.render();
+})
+require(['jquery','header'],function($,header){
+	header.replaceWith();
+})
+require(['jquery','header','cookie'],function($,header,cookie){
+	header.replaceWith(function(){
+		$('.logout').on('click',function(){
+			cookie.remove('email');
+			cookie.remove('password');
+			location.reload();
+		})
+	});
 })

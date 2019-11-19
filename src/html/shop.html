@@ -10,7 +10,15 @@
 	<script type="text/javascript" src="./../../node_modules/requirejs/require.js" data-main="./../js/main.product.js"></script>
 </head>
 <body>
+	<header></header>
+	<footer></footer>
 	<script type="text/javascript" src="./../../node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="./../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	 <script type="text/javascript">
+    $(function(){
+      $('footer').load('footer.html');
+      $('header').load('header.html');
+    })
+  </script>
 </body>
 </html>

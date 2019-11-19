@@ -1,10 +1,21 @@
 require.config({
 	paths:{
 		jquery:"./../../node_modules/jquery/dist/jquery.min",
-		index:"./lib/index"
+		index:"./lib/index",
+		cookie:"./lib/cookie",
+		header:"./lib/header"
 	},
 	shim:{}
 });
 require(['jquery','index'],function($,index){
 	index.render();
+});
+require(['jquery','header','cookie'],function($,header,cookie){
+	header.replaceWith(function(){
+		$('.logout').on('click',function(){
+			cookie.remove('email');
+			cookie.remove('password');
+			location.reload();
+		})
+	});
 })
