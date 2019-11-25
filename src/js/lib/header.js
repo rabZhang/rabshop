@@ -5,7 +5,7 @@ define(['jquery','cookie'],function($,cookie){
 				let mark=$('#cookielogin');
 				let logout=$('#cookielogin+ul>div');
 				mark.html(cookie.get('email'));
-				logout.html(`<div><a class="logout">注销</a></div>`);
+				logout.html(`<a class="logout">注销</a> `);
 				callback&&callback();
 			}
 		}
